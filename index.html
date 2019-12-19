@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Triad dashboard design test</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <div class="wrapper d-flex">
+      <aside
+        class="navbar-container collapse navbar-collapse"
+        id="navbarSlider"
+      >
+        <nav class="navbar d-block bg-dark text-white h-100 p-0">
+          <a href="#">
+            <img class="w-100" src="./public/images/logo.png" alt="VMX logo" />
+          </a>
+          <img class="w-100" src="./public/images/vender.png" alt="vender" />
+          <div>
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle px-3"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Projects
+                </a>
+                <ul
+                  class="dropdown-menu active"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <li class="dropdown-item pl-4 pr-3">
+                    <a href="#">Action</a>
+                  </li>
+                  <li class="dropdown-item pl-4 pr-3">
+                    <a href="#">Another action</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </aside>
+      <div class="dashboard w-100">
+        <header class="dashboard-header">
+          <div class="header-container px-4 py-3">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSlider"
+              aria-controls="navbarSlider"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="avatar-container">
+              <img
+                class="avatar-image"
+                src="./public/images/user.svg"
+                alt="user avatar"
+              />
+              <div class="avatar-content">
+                <p class="avatar-title">
+                  Sunil Sharma
+                </p>
+                <p class="avatar-vender">
+                  Vender
+                </p>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main class="container-fluid">
+          <div class="row justify-content-between px-4 pt-4 dashboard-nav">
+            <p class="dashboard-title">Project - Easter Branding</p>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Projects</a></li>
+                <li class="breadcrumb-item">
+                  <a href="#">Eastern Brnading</a>
+                </li>
+                <li class="breadcrumb-item" aria-current="page">Recce</li>
+              </ol>
+            </nav>
+          </div>
+          <div class="dashboard-container">
+            <div class="dashboard-content mx-1 my-2">
+              <section class="row project-details">
+                <div class="col col-4">
+                  <div class="wrapper d-flex py-3">
+                    <div class="steps-container mr-3">
+                      <div class="steps-content">
+                        <img
+                          src="./public/images/data-analysis.svg"
+                          alt="allocated avatar"
+                        />
+                        <p>Allocated to</p>
+                      </div>
+                    </div>
+                    <p class="text-big align-self-center">
+                      Easter Branding
+                    </p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="wrapper py-3">
+                    <p>Mahendera</p>
+                    <address>
+                      Mahendra Workshop <br />
+                      A1 sector 2 Noida, NOIDA-201301, Uttar Pradesh, India
+                    </address>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="wrapper py-3">
+                    <p class="font-weight-bold">Contact person</p>
+                    <p>
+                      Mr. Chatterjee <br />
+                      <a href="tel:+98910024558"></a>
+                    </p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="wrapper py-3">
+                    <p class="font-weight-bold">Allocated Date</p>
+                    <p>22/6/2018</p>
+                  </div>
+                </div>
+              </section>
+              <section class="row justify-content-center project-nav px-5 py-4">
+                <div class="steps-container active-item">
+                  <div class="steps-content">
+                    <img
+                      src="./public/images/data-analysis.svg"
+                      alt="allocated avatar"
+                    />
+                    <p class="text-small">Recce Pending</p>
+                  </div>
+                </div>
+                <div class="steps-container">
+                  <div class="steps-content">
+                    <img
+                      src="./public/images/data-analysis.svg"
+                      alt="allocated avatar"
+                    />
+                    <p class="text-small">Recce Approval Pending</p>
+                  </div>
+                </div>
+                <div class="steps-container">
+                  <div class="steps-content">
+                    <img
+                      src="./public/images/data-analysis.svg"
+                      alt="allocated avatar"
+                    />
+                    <p class="text-small">Site Cancelled</p>
+                  </div>
+                </div>
+                <div class="steps-container">
+                  <div class="steps-content">
+                    <img
+                      src="./public/images/data-analysis.svg"
+                      alt="allocated avatar"
+                    />
+                    <p class="text-small">Artwork Pending</p>
+                  </div>
+                </div>
+                <div class="steps-container">
+                  <div class="steps-content">
+                    <img
+                      src="./public/images/data-analysis.svg"
+                      alt="allocated avatar"
+                    />
+                    <p class="text-small">Deployement Pending</p>
+                  </div>
+                </div>
+                <div class="steps-container">
+                  <div class="steps-content">
+                    <img
+                      src="./public/images/data-analysis.svg"
+                      alt="allocated avatar"
+                    />
+                    <p class="text-small">Deployed</p>
+                  </div>
+                </div>
+              </section>
+              <section class="row interaction">
+                <div class="col-9 left px-5 pt-5 pb-1">
+                  <h3 class="text-big">Add Recce For [[Element Type]]</h3>
+                  <form action="" class="d-flex justify-content-between">
+                    <div class="form-group">
+                      <label for="permission">Permission</label>
+                      <input
+                        type="checkbox"
+                        name="permission"
+                        id="permission"
+                      />
+                      <label for="element1">Elements</label>
+                      <input type="checkbox" name="element1" id="element1" />
+                      <input type="checkbox" name="element2" id="element2" />
+                      <input type="checkbox" name="element3" id="element3" />
+                    </div>
+                    <div class="form-group">
+                      <label for="upload">upload Recce Certificate</label>
+                      <div>
+                        <input type="file" name="upload" id="upload" />
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </section>
+              <section class="row elements">
+                <div class="col-10 left d-flex px-5">
+                  <div class="col px-0 py-4">
+                    <h4 class="text-normal">Element 1</h4>
+                    <form class="d-flex justify-content-between">
+                      <div
+                        class="form-group d-flex flex-column justify-content-end mr-3"
+                      >
+                        <div class="d-flex mb-2 justify-content-between">
+                          <label class="align-self-end" for="width"
+                            >Width</label
+                          >
+                          <input type="text" name="width" id="width" />
+                        </div>
+                        <div class="d-flex mb-2 justify-content-between">
+                          <label class="align-self-end" for="Height"
+                            >Height</label
+                          >
+                          <input type="text" name="Height" id="Height" />
+                        </div>
+                        <div class="d-flex mb-2 justify-content-between">
+                          <label class="align-self-end" for="total"
+                            >Total</label
+                          >
+                          <input
+                            type="number"
+                            name="total"
+                            id="total"
+                            disabled
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="upload">Upload Photograph</label>
+                        <input type="file" class="d-block" name="upload" />
+                        <input type="file" class="d-block" name="upload" />
+                        <input type="file" class="d-block" name="upload" />
+                      </div>
+                    </form>
+                  </div>
+                  <div class="col px-0 py-4 px-3">
+                    <h4 class="text-normal">Element 2</h4>
+                    <form class="d-flex justify-content-between">
+                      <div
+                        class="form-group d-flex flex-column justify-content-end mr-3"
+                      >
+                        <div class="d-flex mb-2 justify-content-between">
+                          <label class="align-self-end" for="width"
+                            >Width</label
+                          >
+                          <input type="text" name="width" id="width" />
+                        </div>
+                        <div class="d-flex mb-2 justify-content-between">
+                          <label class="align-self-end" for="Height"
+                            >Height</label
+                          >
+                          <input type="text" name="Height" id="Height" />
+                        </div>
+                        <div class="d-flex mb-2 justify-content-between">
+                          <label class="align-self-end" for="total"
+                            >Total</label
+                          >
+                          <input
+                            type="number"
+                            name="total"
+                            id="total"
+                            disabled
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="upload">Upload Photograph</label>
+                        <input type="file" class="d-block" name="upload" />
+                        <input type="file" class="d-block" name="upload" />
+                        <input type="file" class="d-block" name="upload" />
+                      </div>
+                    </form>
+                  </div>
+                  <div class="col px-0 py-4 px-3">
+                    <h4 class="text-normal">Element 3</h4>
+                    <form class="d-flex justify-content-between">
+                      <div
+                        class="form-group d-flex flex-column justify-content-end mr-3"
+                      >
+                        <div class="d-flex mb-2 justify-content-between">
+                          <label class="align-self-end" for="width"
+                            >Width</label
+                          >
+                          <input type="text" name="width" id="width" />
+                        </div>
+                        <div class="d-flex mb-2 justify-content-between">
+                          <label class="align-self-end" for="Height"
+                            >Height</label
+                          >
+                          <input type="text" name="Height" id="Height" />
+                        </div>
+                        <div class="d-flex mb-2 justify-content-between">
+                          <label class="align-self-end" for="total"
+                            >Total</label
+                          >
+                          <input
+                            type="number"
+                            name="total"
+                            id="total"
+                            disabled
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="upload">Upload Photograph</label>
+                        <input type="file" class="d-block" name="upload" />
+                        <input type="file" class="d-block" name="upload" />
+                        <input type="file" class="d-block" name="upload" />
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </section>
+              <section class="row justify-content-center py-4 submission">
+                <div class="col-2 d-flex justify-content-between">
+                  <button
+                    class="btn btn-secondary px-4 mr-3 text-small"
+                    disabled
+                  >
+                    Cancel
+                  </button>
+                  <button class="btn btn-primary px-4 text-small">
+                    Preview
+                  </button>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="floated-form rounded">
+            <form action="" class="">
+              <fieldset class="form-field">
+                <div class="text-center form-header">
+                  <legend class="form-title py-2">Cost Estimation</legend>
+                </div>
+                <div class="form-group px-3 py-1">
+                  <div class="d-flex justify-content-between my-3">
+                    <label class="text-small align-self-center" for="signageCost">Signage Cost</label>
+                    <input
+                      type="number"
+                      name="signageCost"
+                      id="signageCost"
+                      class="form-control"
+                      placeholder="Enter"
+                      aria-describedby="signage cost"
+                    />
+                  </div>
+                  <div class="d-flex justify-content-between my-3">
+                    <label class="text-small align-self-center" for="angleCost">Angle Cost</label>
+                    <input
+                      type="number"
+                      name="angleCost"
+                      id="angleCost"
+                      class="form-control"
+                      placeholder="Enter"
+                      aria-describedby="angle cost"
+                    />
+                  </div>
+                  <div class="d-flex justify-content-between my-3">
+                    <label class="text-small align-self-center" for="spider">Scaffolding /<br>Spider</label>
+                    <input
+                      type="number"
+                      name="spider"
+                      id="spider"
+                      class="form-control"
+                      placeholder="Enter"
+                      aria-describedby="spider"
+                    />
+                  </div>
+                  <div class="d-flex justify-content-between my-3">
+                    <label class="text-small align-self-center" for="transport">Transport Cost</label>
+                    <input
+                      type="number"
+                      name="transport"
+                      id="transport"
+                      class="form-control"
+                      placeholder="Enter"
+                      aria-describedby="Transport cost"
+                    />
+                  </div>
+                  <div class="d-flex justify-content-between my-3">
+                    <label class="text-small align-self-center" for="total">total Cost</label>
+                    <input
+                      type="number"
+                      name="totalCost"
+                      id="totalCost"
+                      value="0"
+                      class="form-control"
+                      placeholder="Enter"
+                      aria-describedby="total cost"
+                    />
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+      integrity="sha256-OUFW7hFO0/r5aEGTQOz9F/aXQOt+TwqI1Z4fbVvww04="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./src/script.js"></script>
+  </body>
+</html>

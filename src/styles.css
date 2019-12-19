@@ -1,0 +1,312 @@
+/*================ base styles =====================*/
+
+:root {
+  --secondary-color: #ecf0f5;
+  --primary-color: #336699;
+  --light-color: #fff;
+  --optional-color:#48626c;
+  --text-color: #333333;
+  --text-small: 0.7rem;
+  --text-normal: 1rem;
+  --text-big: 1.1rem;
+
+  --project-details-background: #fd9b00;
+
+  --font-awesome: "Font Awesome 5 Free";
+}
+
+body {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+ul li {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.text-big {
+  font-size: var(--text-big);
+}
+
+.text-normal {
+  font-size: var(--text-normal);
+}
+
+.text-small {
+  font-size: var(--text-small);
+}
+
+.bg-dark {
+  background-color: var(--text-color) !important;
+}
+
+.btn-primary {
+  background: var(--primary-color)
+}
+/*================ navbar styles =====================*/
+
+.navbar-container {
+  width: 0;
+  height: 100vh;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: auto;
+  -ms-flex-positive: 1;
+  flex-grow: 0;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.navbar-container.collapsing {
+  height: 100vh !important;
+}
+
+.navbar-container.show {
+  width: 250px;
+}
+
+.navbar-nav .nav-link {
+  color: var(--light-color);
+}
+
+.dropdown-toggle::after {
+  content: "";
+  border: 2px solid transparent;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: auto;
+  margin-bottom: -3px;
+  margin-left: 44%;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  border-top: none;
+  border-left: none;
+  right: 20px;
+  border-color: var(--light-color);
+}
+
+.dropdown-toggle::before {
+  content: "\f022";
+  font-family: var(--font-awesome);
+}
+
+.dropdown-menu {
+  color: var(--light-color);
+  background-color: #4d4d4d;
+  padding: 0;
+  border-radius: 0;
+}
+
+.dropdown-item a {
+  color: var(--light-color);
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  background-color: #4d4d4d;
+}
+/*================ header styles =====================*/
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  color: var(--light-color);
+  background-color: var(--primary-color);
+}
+
+.header-container .navbar-toggler {
+  font-size: initial;
+  padding: 0;
+}
+
+.header-container .navbar-toggler .fa-bars {
+  color: var(--light-color);
+}
+
+.avatar-container {
+  width: 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.avatar-container .avatar-image {
+  max-width: 34px;
+}
+
+.avatar-container p {
+  margin: 0;
+  font-size: var(--text-small);
+}
+
+.avatar-container .avatar-title {
+  font-weight: bold;
+}
+
+/*================ dashboard styles =====================*/
+
+.dashboard-nav nav {
+  font-size: var(--text-small);
+}
+
+.dashboard-nav .dashboard-title {
+  font-size: var(--text-big);
+  font-weight: 600;
+}
+
+.breadcrumb {
+  background-color: transparent;
+  padding: 0;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+}
+
+.breadcrumb-item > a {
+  color: var(--text-color);
+}
+
+.dashboard-container {
+  background-color: var(--light-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-content {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-content .row {
+  margin: 0;
+}
+
+.project-details {
+  background-color: var(--project-details-background);
+  color: var(--light-color);
+  font-size: var(--text-small);
+}
+
+.project-details p,
+.project-details address,
+.project-nav p {
+  margin-bottom: 0.1rem;
+}
+
+.project-details .col {
+  border-right: 1px solid yellow;
+}
+
+.project-details .col:nth-last-child() {
+  border: none;
+}
+
+.steps-container {
+  width: 150px;
+  padding: 1rem;
+  color: var(--text-color);
+  background-color: var(--light-color);
+  clip-path: polygon(120px 0, 100% 50%, 120px 100%, 0 150px, 0 0);
+}
+
+.steps-container .steps-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.steps-container img {
+  width: 34px;
+}
+
+.project-nav .steps-container {
+  background: var(--secondary-color);
+  clip-path: polygon(120px 0, 95% 50%, 120px 100%, 0 100%, 15px 50%, 0 0);
+}
+
+.project-nav .steps-container:first-child {
+  clip-path: polygon(120px 0, 95% 50%, 120px 100%, 0 150px, 0 0);
+}
+
+.project-nav .active-item {
+  color: var(--light-color);
+  background-color: var(--project-details-background);
+}
+
+/*================ dashboard forms styles =====================*/
+
+.interaction,
+.elements {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.form-group label {
+  font-weight: 600;
+}
+
+.form-group label[for="upload"]::after {
+  content: "";
+  font-family: var(--font-awesome);
+  width: 50px;
+  height: 50px;
+  margin-left: 0.5rem;
+  color: var(--text-color);
+}
+
+.form-group input[type="file"] {
+  font-size: var(--text-small);
+  margin-bottom: 0.5rem;
+}
+
+.elements .col {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.elements .col:last-child {
+  border-right: none;
+}
+
+.elements .form-group label {
+  font-weight: bold;
+  font-size: var(--text-small);
+}
+
+.elements .form-group input[type="text"],
+.elements .form-group input[type="number"] {
+  margin-left: 0.5rem;
+  width: 40px;
+}
+
+/*================ dashboard buttons styles =====================*/
+.submission {
+    background-color: var(--secondary-color);
+}
+
+.btn {
+    border-radius: 0.1rem;
+}
+
+/*================ floated-form styles =====================*/
+
+.floated-form {
+    position: absolute;
+    right: 3rem;
+    top: 24rem;
+    color: var(--light-color);
+    background-color: var( --optional-color);
+    overflow: hidden;
+}
+
+.floated-form .form-control {
+    width: 65%;
+    border-radius: 0;
+}
+
+.floated-form .form-header {
+    background-color: #2c4763;
+}
